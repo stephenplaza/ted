@@ -37,6 +37,5 @@ add_subdirectory(python)
 ###############
 
 configure_file(
-  ${PROJECT_SOURCE_DIR}/cmake/config.h.in
   ${PROJECT_BINARY_DIR}/config.h
 )
