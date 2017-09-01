@@ -55,7 +55,10 @@ if [[ $CONFIGURE_ONLY == 0 ]]; then
 
     # "install" to the build prefix (conda will relocate these files afterwards)
     make install
-    
+  
+    cd .. 
+    ${PYTHON} setup.py install 
+
     if [[ -z "$SKIP_TED_TESTS" || "$SKIP_TED_TESTS" == "0" ]]; then
         echo "Running build tests.  To skip, set SKIP_TED_TESTS=1"
     
