@@ -8,9 +8,6 @@ project(ted)
 set(VERSION_MAJOR 0)
 set(VERSION_MINOR 1)
 
-include(${CMAKE_SOURCE_DIR}/cmake/include/define_module.cmake)
-include(${CMAKE_SOURCE_DIR}/cmake/include/git_sha1.cmake)
-
 #####################
 # compiler settings #
 #####################
